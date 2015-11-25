@@ -11,7 +11,7 @@ output - output file
 blockSize - a buffer size for reading file. The default value is 1024*1024 bytes
 workers - a number of threads for reading file. The default value is 4
 
-The results for the file //examples/bigfile.txt:
+The results for the file examples/bigfile.txt:
 
 blockSize|workers|Time
 ------------------------
