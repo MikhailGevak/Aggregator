@@ -13,7 +13,7 @@ run input=examples/bigfile.txt  output=examples/output.txt blockSize=1024 worker
 
 The results for the file examples/bigfile.txt:
 |blockSize|workers|Time  |
---------------------------
+|---------|-------|------|
 |1024     |1      |430 ms|
 |1024     |4      |127 ms|
 |1024     |7      |164 ms|
