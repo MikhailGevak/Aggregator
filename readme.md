@@ -6,10 +6,10 @@ So, for running the program you have to run sbt command:
 ```
 run input=examples/bigfile.txt  output=examples/output.txt blockSize=1024 workers=4
 ```
-input - input file
-output - output file
-blockSize - a buffer size for reading file. The default value is 1024*1024 bytes
-workers - a number of threads for reading file. The default value is 4
+*input - input file
+*output - output file
+*blockSize - a buffer size for reading file. The default value is 1024*1024 bytes
+*workers - a number of threads for reading file. The default value is 4
 
 The results for the file examples/bigfile.txt:
 
