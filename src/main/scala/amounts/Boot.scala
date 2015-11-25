@@ -22,8 +22,8 @@ object Boot extends scala.App {
 
     val inputFileName = argsMap("input")
     val outputFileName = argsMap("output")
-    val blockSize = argsMap("blockSize").toInt
-    val numberOfWorkers = argsMap("workers").toInt
+    val blockSize = argsMap.get("blockSize") map {_.toInt} getOrElse(1024*1024)
+    val numberOfWorkers = argsMap.get("workers") map {_.toInt} getOrElse(4)
 
     val system = ActorSystem("Aggregator")
 

@@ -64,7 +64,7 @@ class MapCreatorTest extends TestKit(ActorSystem()) with FunSuiteLike with Befor
   }
 
   test("bigfile.txt") {
-    val master = system.actorOf(AmountMapCreator.props("examples/bigfile.txt", 10))
+    val master = system.actorOf(AmountMapCreator.props("examples/bigfile.txt", 1024))
 
     master ! Aggregate()
 
@@ -77,7 +77,7 @@ class MapCreatorTest extends TestKit(ActorSystem()) with FunSuiteLike with Befor
   }
 
   test("bigfile.txt and 4 workers") {
-    val master = system.actorOf(AmountMapCreator.props("examples/bigfile.txt", 10, 4))
+    val master = system.actorOf(AmountMapCreator.props("examples/bigfile.txt", 1024, 4))
 
     master ! Aggregate()
 
