@@ -3,9 +3,9 @@ The Program sums amounts for each ID and writes aggregation result in a single f
 
 
 So, for running the program you have to run sbt command:
-
+```
 run input=examples/bigfile.txt  output=examples/output.txt blockSize=1024 workers=4
-
+```
 input - input file
 output - output file
 blockSize - a buffer size for reading file. The default value is 1024*1024 bytes
