@@ -16,6 +16,9 @@ The results for the file examples/bigfile.txt:
 blockSize|workers|Time
 ------------------------
 1024     |1      |430 ms
+
 1024     |4      |127 ms
+
 1024     |7      |164 ms
+
 1024     |9      |128 ms
